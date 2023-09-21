@@ -1,4 +1,4 @@
-import { roboto } from "../fonts"
+import { anton } from "../fonts"
 
 export default function HeroSection(){
 
@@ -6,7 +6,7 @@ export default function HeroSection(){
 
     return(
         <>
-        <p className={roboto.className}>HOME</p>
+        <h1 className={anton.className}>r3vfitness</h1>
         </>
     )
 }

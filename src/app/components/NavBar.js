@@ -1,4 +1,4 @@
-
+import { anton, inter } from "../fonts"
 
 export default function NavBar(){
     return(
@@ -9,7 +9,7 @@ export default function NavBar(){
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">PROGRAMS</a></li>
                 <li><a href="#">TESTIMONIALS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li className='px-4 py-1 rounded-full border border-yellow-50'><a className={anton.className}  href="#">CONTACT</a></li>
             </ul>
         </nav>
         </>

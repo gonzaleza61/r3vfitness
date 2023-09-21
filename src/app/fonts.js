@@ -1,15 +1,17 @@
-import { Inter, Roboto } from 'next/font/google'
+import { Inter, Anton} from 'next/font/google'
 
 
-export const roboto = Roboto({
+export const anton = Anton({
     subsets:['latin'],
-    weight: '500',
-    display: 'swap'
+    weight: '400',
+    display: 'swap',
+    variable: '--font-anton'
   })
   
 export const inter = Inter({
     subsets:['latin'],
-    weight: '900',
-    display: 'swap'
+    weight: '300',
+    display: 'swap',
+    variable: '--font-inter'
   })
   

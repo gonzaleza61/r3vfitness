@@ -1,5 +1,6 @@
 import NavBar from './components/NavBar'
 import './globals.css'
+import { inter } from './fonts'
 
 
 export const metadata = {
@@ -9,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body>
       <NavBar/>
         {children}</body>
