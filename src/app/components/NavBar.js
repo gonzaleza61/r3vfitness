@@ -31,12 +31,26 @@ export default function NavBar() {
         </div>
 
         <div className="w-full md:hidden">
-          <div className={`${faIcon ? "hidden" : "flex"} flex-col text-center`}>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Programs</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Contact</a>
+          <div
+            className={`${
+              faIcon ? "hidden" : "flex"
+            }  flex-col justify-between text-center`}
+          >
+            <a className="p-2" href="#">
+              Home
+            </a>
+            <a className="p-2" href="#">
+              About
+            </a>
+            <a className="p-2" href="#">
+              Programs
+            </a>
+            <a className="p-2" href="#">
+              Testimonials
+            </a>
+            <a className="p-2" href="#">
+              Contact
+            </a>
           </div>
         </div>
 
