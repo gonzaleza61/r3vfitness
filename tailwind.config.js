@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'yellow': '#D7FB00',
+      },
       fontFamily: {
         sans: ['var(--font-inter)'],
         mono: ['var(--font-anton)'],

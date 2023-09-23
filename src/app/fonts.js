@@ -1,17 +1,15 @@
-import { Inter, Anton} from 'next/font/google'
-
+import { Inter, Anton } from "next/font/google";
 
 export const anton = Anton({
-    subsets:['latin'],
-    weight: '400',
-    display: 'swap',
-    variable: '--font-anton'
-  })
-  
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-anton",
+});
+
 export const inter = Inter({
-    subsets:['latin'],
-    weight: '300',
-    display: 'swap',
-    variable: '--font-inter'
-  })
-  
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-inter",
+});
