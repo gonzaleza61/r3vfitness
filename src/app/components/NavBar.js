@@ -12,7 +12,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="mx-auto my-0 max-w-screen-xl  px-4 py-16">
+      <nav className="mx-auto my-0 max-w-screen-xl  py-16 md:px-4">
         {/**
          * Mobile Nav
          */}
@@ -30,7 +30,7 @@ export default function NavBar() {
           ></button>
         </div>
 
-        <div className="absolute w-full bg-slate-400 md:hidden">
+        <div className="w-full bg-slate-400 md:hidden">
           <div
             className={`${
               faIcon ? "hidden" : "flex"
