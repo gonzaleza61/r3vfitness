@@ -8,12 +8,14 @@ export default function NavBar() {
 
   const faIconToggle = () => {
     setFaIcon(!faIcon)
-    console.log("pressed")
   }
 
   return (
     <>
       <nav className="mx-auto my-0 max-w-screen-xl  px-4 py-16">
+        {/**
+         * Mobile Nav
+         */}
         <div className="absolute right-8 top-4 md:hidden">
           <button
             onClick={() => {
@@ -28,8 +30,18 @@ export default function NavBar() {
           ></button>
         </div>
 
+        <div className="w-full md:hidden">
+          <div className={`${faIcon ? "hidden" : "flex"} flex-col text-center`}>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Programs</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+
         {/**
-         * Desktop Navigation
+         * Desktop Nav
          */}
         <ul className="m-0 hidden list-none flex-row flex-wrap items-center justify-center gap-8 p-0 md:flex">
           <li className="hover:transition-color mr-auto basis-auto text-left text-white  hover:text-yellow hover:duration-500">
