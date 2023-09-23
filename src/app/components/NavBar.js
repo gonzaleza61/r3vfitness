@@ -4,7 +4,12 @@ import "font-awesome/css/font-awesome.min.css"
 import { useState } from "react"
 
 export default function NavBar() {
-  const [faBars, setFaBars] = useState("fa-bars")
+  const [faIcon, setFaIcon] = useState(true)
+
+  const faIconToggle = () => {
+    setFaIcon(!faIcon)
+    console.log("pressed")
+  }
 
   return (
     <>
@@ -12,12 +17,14 @@ export default function NavBar() {
         <div className="absolute right-8 top-4 md:hidden">
           <button
             onClick={() => {
-              setFaBars("fa-times")
+              faIconToggle()
             }}
             aria-label="navigation"
             type="button"
             id="bars"
-            className={`fa fa-sharp ${faBars} fa-regular text-3xl`}
+            className={`fa fa-sharp ${
+              faIcon ? "fa-bars" : "fa-times"
+            } fa-regular text-3xl`}
           ></button>
         </div>
 
