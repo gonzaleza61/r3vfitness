@@ -30,7 +30,7 @@ export default function NavBar() {
           ></button>
         </div>
 
-        <div className="w-full md:hidden">
+        <div className="absolute w-full md:hidden">
           <div
             className={`${
               faIcon ? "hidden" : "flex"
