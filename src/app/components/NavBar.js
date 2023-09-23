@@ -1,16 +1,23 @@
+"use client"
 import { anton, inter } from "../fonts"
 import "font-awesome/css/font-awesome.min.css"
+import { useState } from "react"
 
 export default function NavBar() {
+  const [faBars, setFaBars] = useState("fa-bars")
+
   return (
     <>
       <nav className="mx-auto my-0 max-w-screen-xl  px-4 py-16">
         <div className="absolute right-8 top-4 md:hidden">
           <button
+            onClick={() => {
+              setFaBars("fa-times")
+            }}
             aria-label="navigation"
             type="button"
-            id="button"
-            className="fa fa-sharp fa-bars fa-regular text-3xl"
+            id="bars"
+            className={`fa fa-sharp ${faBars} fa-regular text-3xl`}
           ></button>
         </div>
 

@@ -1,7 +1,6 @@
 import NavBar from "./components/NavBar"
 import "./globals.css"
 import { inter } from "./fonts"
-import "font-awesome/css/font-awesome.min.css"
 
 export const metadata = {
   title: "r3vfitness",
