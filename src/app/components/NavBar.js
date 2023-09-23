@@ -36,19 +36,19 @@ export default function NavBar() {
               faIcon ? "hidden" : "flex"
             }  flex-col justify-between text-center`}
           >
-            <a className="p-2" href="#">
+            <a className="py-2" href="#">
               HOME
             </a>
-            <a className="p-2" href="#">
+            <a className="py-2" href="#">
               ABOUT
             </a>
-            <a className="p-2" href="#">
+            <a className="py-2" href="#">
               PROGRAMS
             </a>
-            <a className="p-2" href="#">
+            <a className="py-2" href="#">
               TESTIMONIALS
             </a>
-            <a className="p-2" href="#">
+            <a className="py-2" href="#">
               CONTACT
             </a>
           </div>
