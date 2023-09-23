@@ -30,26 +30,26 @@ export default function NavBar() {
           ></button>
         </div>
 
-        <div className="absolute w-full md:hidden">
+        <div className="absolute w-full bg-slate-400 md:hidden">
           <div
             className={`${
               faIcon ? "hidden" : "flex"
             }  flex-col justify-between text-center`}
           >
             <a className="p-2" href="#">
-              Home
+              HOME
             </a>
             <a className="p-2" href="#">
-              About
+              ABOUT
             </a>
             <a className="p-2" href="#">
-              Programs
+              PROGRAMS
             </a>
             <a className="p-2" href="#">
-              Testimonials
+              TESTIMONIALS
             </a>
             <a className="p-2" href="#">
-              Contact
+              CONTACT
             </a>
           </div>
         </div>
