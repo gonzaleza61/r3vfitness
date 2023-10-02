@@ -25,11 +25,11 @@ export default function Component() {
           <div className="flex flex-col justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h1
-                className={`${anton.className} bg-gradient-to-r from-white via-lime-200 to-lime-500 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-5xl xl:text-6xl/none`}
+                className={`${anton.className} bg-white  bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-5xl xl:text-6xl/none`}
               >
-                Start Your Revolution In Fitness
+                START YOUR REVOLUTION IN FITNESS
               </h1>
-              <p className="mx-auto max-w-[600px] text-zinc-200 dark:text-zinc-100 md:text-xl">
+              <p className="t mx-auto max-w-[600px] text-yellow  md:text-xl">
                 Become a Part of Our Dynamic Fitness Community and Begin Your
                 Health Journey.
               </p>

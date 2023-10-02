@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection"
 export default function Home() {
   return (
     <>
+      <div className=" h-px bg-zinc-800"></div>
       <HeroSection />
       <AboutSection />
     </>

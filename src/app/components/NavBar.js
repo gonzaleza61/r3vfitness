@@ -15,7 +15,7 @@ export default function NavBar() {
       <nav
         className={`${
           faIcon ? "bg-black " : "bg-gray-500 "
-        }mx-auto my-0 max-w-screen-xl py-16 md:px-4`}
+        }mx-auto my-0 max-w-screen-xl py-8 md:px-4`}
       >
         {/**
          * Mobile Nav
