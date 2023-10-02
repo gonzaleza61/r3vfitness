@@ -2,6 +2,7 @@
 import { anton, inter } from "../fonts"
 import "font-awesome/css/font-awesome.min.css"
 import { useState } from "react"
+import Image from "next/image"
 
 export default function NavBar() {
   const [faIcon, setFaIcon] = useState(true)
@@ -64,7 +65,18 @@ export default function NavBar() {
         <ul className="m-0 hidden list-none flex-row flex-wrap items-center justify-center gap-8 p-0 md:flex">
           <li className="hover:transition-color mr-auto basis-auto text-left text-white  hover:text-yellow hover:duration-500">
             <h1>
-              <a href="/">HOME</a>
+              <a href="/">
+                <div className="relative">
+                  <Image
+                    src="/r3vlogo.svg"
+                    alt="r3vfitlogo"
+                    width={50}
+                    height={50}
+                    className="transition-all duration-300 ease-in-out"
+                  />
+                  <div className="hover: absolute inset-0 bg-yellow opacity-0 mix-blend-multiply transition-opacity duration-300 ease-in-out hover:opacity-100"></div>
+                </div>
+              </a>
             </h1>
           </li>
           <li className="hover:transition-color text-white hover:text-yellow  hover:duration-500">
