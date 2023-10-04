@@ -16,13 +16,25 @@ export default function ImageSwiper() {
       <section className="px-12 py-12">
         <div className="justify-center">
           <Swiper
-            slidesPerView={2}
+            // slidesPerView={2}
             spaceBetween={30}
             pagination={{
               clickable: true,
             }}
             modules={[Pagination]}
             className="h-96 w-full rounded-lg"
+            breakpoints={{
+              // when window width is >= 640px
+              640: {
+                width: 640,
+                slidesPerView: 1,
+              },
+              // when window width is >= 768px
+              768: {
+                width: 768,
+                slidesPerView: 1,
+              },
+            }}
           >
             <div className="flex">
               <SwiperSlide className="bg-white">Slide 1</SwiperSlide>
