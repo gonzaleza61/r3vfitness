@@ -16,7 +16,7 @@ export default function ImageSwiper() {
       <section className="px-12 py-12">
         <div className="justify-center">
           <Swiper
-            // slidesPerView={2}
+            slidesPerView={1}
             spaceBetween={30}
             pagination={{
               clickable: true,
