@@ -13,10 +13,10 @@ import { Pagination } from "swiper/modules"
 export default function ImageSwiper() {
   return (
     <>
-      <section className="px-2 py-12">
-        <div className="container">
+      <section className="px-12 py-12">
+        <div className="justify-center">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={2}
             spaceBetween={30}
             pagination={{
               clickable: true,
