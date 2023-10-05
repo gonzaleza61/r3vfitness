@@ -16,7 +16,7 @@ export default function ImageSwiper() {
     <>
       <section className="px-12 py-12">
         <h1
-          className={`${anton.className} py-6 text-5xl underline decoration-yellow`}
+          className={`${anton.className} py-6 text-3xl underline decoration-yellow sm:text-4xl xl:text-5xl/none`}
         >
           OUR PROGRAMS
         </h1>
