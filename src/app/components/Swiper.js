@@ -30,24 +30,30 @@ export default function ImageSwiper() {
             modules={[Pagination]}
             className="h-96 w-full rounded-lg"
             breakpoints={{
-              // when window width is >= 640px
-              // when window width is >= 768px
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
               768: {
-                width: 768,
                 slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
               },
             }}
           >
             <div className="flex">
-              <SwiperSlide className="bg-white">Slide 1</SwiperSlide>
-              <SwiperSlide className="bg-white">Slide 2</SwiperSlide>
-              <SwiperSlide className="bg-white">Slide 3</SwiperSlide>
-              <SwiperSlide className="bg-white">Slide 4</SwiperSlide>
-              <SwiperSlide className="bg-white">Slide 5</SwiperSlide>
-              <SwiperSlide className="bg-white">Slide 6</SwiperSlide>
-              <SwiperSlide className="bg-white">Slide 7</SwiperSlide>
-              <SwiperSlide className="bg-white">Slide 8</SwiperSlide>
-              <SwiperSlide className="bg-white">Slide 9</SwiperSlide>
+              <SwiperSlide className="bg-slate-700">Slide 1</SwiperSlide>
+              <SwiperSlide className="bg-slate-700">Slide 2</SwiperSlide>
+              <SwiperSlide className="bg-slate-700">Slide 3</SwiperSlide>
+              <SwiperSlide className="bg-slate-700">Slide 4</SwiperSlide>
+              <SwiperSlide className="bg-slate-700">Slide 5</SwiperSlide>
+              <SwiperSlide className="bg-slate-700">Slide 6</SwiperSlide>
+              <SwiperSlide className="bg-slate-700">Slide 7</SwiperSlide>
+              <SwiperSlide className="bg-slate-700">Slide 8</SwiperSlide>
+              <SwiperSlide className="bg-slate-700">Slide 9</SwiperSlide>
             </div>
           </Swiper>
         </div>
