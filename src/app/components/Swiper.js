@@ -25,14 +25,10 @@ export default function ImageSwiper() {
             className="h-96 w-full rounded-lg"
             breakpoints={{
               // when window width is >= 640px
-              640: {
-                width: 640,
-                slidesPerView: 1,
-              },
               // when window width is >= 768px
               768: {
                 width: 768,
-                slidesPerView: 1,
+                slidesPerView: 2,
               },
             }}
           >
