@@ -1,5 +1,6 @@
 "use client"
 import React, { useRef, useState } from "react"
+import { anton } from "../fonts"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -14,6 +15,11 @@ export default function ImageSwiper() {
   return (
     <>
       <section className="px-12 py-12">
+        <h1
+          className={`${anton.className} py-6 text-5xl underline decoration-yellow`}
+        >
+          OUR PROGRAMS
+        </h1>
         <div className="justify-center">
           <Swiper
             slidesPerView={1}
