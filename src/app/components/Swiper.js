@@ -11,6 +11,8 @@ import "swiper/css/pagination"
 // import required modules
 import { Pagination } from "swiper/modules"
 
+import Image from "next/image"
+
 export default function ImageSwiper() {
   return (
     <>
@@ -45,15 +47,67 @@ export default function ImageSwiper() {
             }}
           >
             <div className="flex">
-              <SwiperSlide className="bg-slate-700">Slide 1</SwiperSlide>
-              <SwiperSlide className="bg-slate-700">Slide 2</SwiperSlide>
-              <SwiperSlide className="bg-slate-700">Slide 3</SwiperSlide>
-              <SwiperSlide className="bg-slate-700">Slide 4</SwiperSlide>
-              <SwiperSlide className="bg-slate-700">Slide 5</SwiperSlide>
-              <SwiperSlide className="bg-slate-700">Slide 6</SwiperSlide>
-              <SwiperSlide className="bg-slate-700">Slide 7</SwiperSlide>
-              <SwiperSlide className="bg-slate-700">Slide 8</SwiperSlide>
-              <SwiperSlide className="bg-slate-700">Slide 9</SwiperSlide>
+              <SwiperSlide className="bg-slate-700">
+                <Image
+                  src="/mealplan.jpg"
+                  alt="meal plan"
+                  className="h-full w-full object-cover"
+                  width={800}
+                  height={800}
+                />
+                Slide 1
+              </SwiperSlide>
+              <SwiperSlide className="bg-slate-700">
+                <Image
+                  src="/strengthtraining.jpg"
+                  alt="strength training"
+                  className="h-full w-full object-cover"
+                  width={800}
+                  height={800}
+                />
+                Slide 2
+              </SwiperSlide>
+              <SwiperSlide className="bg-slate-700">
+                <Image
+                  src="/training1.jpg"
+                  alt="strength training"
+                  className="h-full w-full object-cover"
+                  width={800}
+                  height={800}
+                />
+                Slide 3
+              </SwiperSlide>
+              <SwiperSlide className="bg-slate-700">
+                <Image
+                  src="/training2.jpg"
+                  alt="strength training"
+                  className="h-full w-full object-cover"
+                  width={800}
+                  height={800}
+                />
+                Slide 4
+              </SwiperSlide>
+              <SwiperSlide className="bg-slate-700">
+                <Image
+                  src="/training3.jpg"
+                  alt="strength training"
+                  className="h-full w-full object-cover"
+                  width={800}
+                  height={800}
+                />
+                Slide 5
+              </SwiperSlide>
+              <SwiperSlide className="bg-slate-700">
+                {" "}
+                <Image
+                  src="/training4.jpg"
+                  alt="strength training"
+                  className="h-full w-full object-cover"
+                  width={800}
+                  height={800}
+                />
+                Slide 6
+              </SwiperSlide>
             </div>
           </Swiper>
         </div>
