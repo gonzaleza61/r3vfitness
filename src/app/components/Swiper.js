@@ -49,16 +49,6 @@ export default function ImageSwiper() {
             <div className="flex">
               <SwiperSlide className="bg-slate-700">
                 <Image
-                  src="/mealplan.jpg"
-                  alt="meal plan"
-                  className="h-full w-full object-cover"
-                  width={800}
-                  height={800}
-                />
-                Slide 1
-              </SwiperSlide>
-              <SwiperSlide className="bg-slate-700">
-                <Image
                   src="/strengthtraining.jpg"
                   alt="strength training"
                   className="h-full w-full object-cover"
@@ -69,16 +59,6 @@ export default function ImageSwiper() {
               </SwiperSlide>
               <SwiperSlide className="bg-slate-700">
                 <Image
-                  src="/training1.jpg"
-                  alt="strength training"
-                  className="h-full w-full object-cover"
-                  width={800}
-                  height={800}
-                />
-                Slide 3
-              </SwiperSlide>
-              <SwiperSlide className="bg-slate-700">
-                <Image
                   src="/training2.jpg"
                   alt="strength training"
                   className="h-full w-full object-cover"
@@ -86,6 +66,25 @@ export default function ImageSwiper() {
                   height={800}
                 />
                 Slide 4
+              </SwiperSlide>
+              <SwiperSlide className="bg-slate-700">
+                <Image
+                  src="/mealplan.jpg"
+                  alt="meal plan"
+                  className="h-full w-full object-cover"
+                  width={600}
+                  height={600}
+                />
+              </SwiperSlide>
+              <SwiperSlide className="bg-slate-700">
+                <Image
+                  src="/training1.jpg"
+                  alt="strength training"
+                  className="h-full w-full object-cover"
+                  width={800}
+                  height={800}
+                />
+                Slide 3
               </SwiperSlide>
               <SwiperSlide className="bg-slate-700">
                 <Image
