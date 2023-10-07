@@ -52,18 +52,17 @@ export default function ImageSwiper() {
                   src="/strengthtraining.jpg"
                   alt="strength training"
                   className="h-full w-full object-cover"
-                  width={800}
-                  height={800}
+                  width={600}
+                  height={600}
                 />
-                Slide 2
               </SwiperSlide>
               <SwiperSlide className="bg-slate-700">
                 <Image
                   src="/training2.jpg"
                   alt="strength training"
                   className="h-full w-full object-cover"
-                  width={800}
-                  height={800}
+                  width={600}
+                  height={600}
                 />
                 Slide 4
               </SwiperSlide>
@@ -81,8 +80,8 @@ export default function ImageSwiper() {
                   src="/training1.jpg"
                   alt="strength training"
                   className="h-full w-full object-cover"
-                  width={800}
-                  height={800}
+                  width={600}
+                  height={600}
                 />
                 Slide 3
               </SwiperSlide>
@@ -91,8 +90,8 @@ export default function ImageSwiper() {
                   src="/training3.jpg"
                   alt="strength training"
                   className="h-full w-full object-cover"
-                  width={800}
-                  height={800}
+                  width={600}
+                  height={600}
                 />
                 Slide 5
               </SwiperSlide>
@@ -102,8 +101,8 @@ export default function ImageSwiper() {
                   src="/training4.jpg"
                   alt="strength training"
                   className="h-full w-full object-cover"
-                  width={800}
-                  height={800}
+                  width={600}
+                  height={600}
                 />
                 Slide 6
               </SwiperSlide>
