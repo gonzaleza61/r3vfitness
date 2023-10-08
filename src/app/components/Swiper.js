@@ -47,7 +47,7 @@ export default function ImageSwiper() {
             }}
           >
             <div className="flex">
-              <SwiperSlide className="bg-slate-700">
+              <SwiperSlide>
                 <Image
                   src="/strengthtraining.jpg"
                   alt="strength training"
@@ -82,6 +82,7 @@ export default function ImageSwiper() {
                   className="h-full w-full object-cover"
                   width={600}
                   height={600}
+                  loading="eager"
                 />
                 Slide 3
               </SwiperSlide>
@@ -92,6 +93,7 @@ export default function ImageSwiper() {
                   className="h-full w-full object-cover"
                   width={600}
                   height={600}
+                  loading="eager"
                 />
                 Slide 5
               </SwiperSlide>
@@ -103,6 +105,7 @@ export default function ImageSwiper() {
                   className="h-full w-full object-cover"
                   width={600}
                   height={600}
+                  loading="eager"
                 />
                 Slide 6
               </SwiperSlide>
