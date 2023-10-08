@@ -24,12 +24,12 @@ export default function Testimonials() {
                 />
                 <p className="text-gray-600 md:text-xl">
                   {" "}
-                  <span className="font-serif">"</span> Lorem ipsum dolor sit
+                  <span className="font-serif"></span> Lorem ipsum dolor sit
                   amet consectetur adipisicing elit. Quaerat repellat
                   perspiciatis excepturi est. Non ipsum iusto aliquam
                   consequatur repellat provident, omnis ut, sapiente voluptates
                   veritatis cum deleniti repudiandae ad doloribus.{" "}
-                  <span className="font-serif">"</span>
+                  <span className="font-serif"></span>
                 </p>
                 <div>
                   <h6 className="text-lg font-semibold leading-none">
@@ -54,12 +54,12 @@ export default function Testimonials() {
               <div className="mt-4 space-y-4 text-center sm:mt-0 sm:text-left">
                 <p className="text-gray-600">
                   {" "}
-                  <span className="font-serif">"</span> Lorem ipsum dolor sit
+                  <span className="font-serif"></span> Lorem ipsum dolor sit
                   amet consectetur adipisicing elit. Quaerat repellat
                   perspiciatis excepturi est. Non ipsum iusto aliquam
                   consequatur repellat provident, omnis ut, sapiente voluptates
                   veritatis cum deleniti repudiandae ad doloribus.{" "}
-                  <span className="font-serif">"</span>
+                  <span className="font-serif"></span>
                 </p>
                 <div>
                   <h6 className="text-lg font-semibold leading-none">
@@ -83,12 +83,12 @@ export default function Testimonials() {
               <div className="mt-4 space-y-4 text-center sm:mt-0 sm:text-left">
                 <p className="text-gray-600">
                   {" "}
-                  <span className="font-serif">"</span> Lorem ipsum dolor sit
+                  <span className="font-serif"></span> Lorem ipsum dolor sit
                   amet consectetur adipisicing elit. Quaerat repellat
                   perspiciatis excepturi est. Non ipsum iusto aliquam
                   consequatur repellat provident, omnis ut, sapiente voluptates
                   veritatis cum deleniti repudiandae ad doloribus.{" "}
-                  <span className="font-serif">"</span>
+                  <span className="font-serif"></span>
                 </p>
                 <div>
                   <h6 className="text-lg font-semibold leading-none">
