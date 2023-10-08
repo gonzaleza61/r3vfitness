@@ -54,6 +54,7 @@ export default function ImageSwiper() {
                   className="h-full w-full object-cover"
                   width={600}
                   height={600}
+                  loading="eager"
                 />
               </SwiperSlide>
               <SwiperSlide className="bg-slate-700">
@@ -63,6 +64,7 @@ export default function ImageSwiper() {
                   className="h-full w-full object-cover"
                   width={600}
                   height={600}
+                  loading="eager"
                 />
                 Slide 4
               </SwiperSlide>
@@ -73,6 +75,7 @@ export default function ImageSwiper() {
                   className="h-full w-full object-cover"
                   width={600}
                   height={600}
+                  loading="eager"
                 />
               </SwiperSlide>
               <SwiperSlide className="bg-slate-700">
