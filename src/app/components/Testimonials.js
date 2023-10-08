@@ -24,7 +24,7 @@ export default function Testimonials() {
                   width="220"
                   loading="lazy"
                 />
-                <p className="text-gray-600 md:text-xl">
+                <p className="text-black md:text-xl">
                   {" "}
                   <span className="font-serif"></span> Lorem ipsum dolor sit
                   amet consectetur adipisicing elit. Quaerat repellat
@@ -54,7 +54,7 @@ export default function Testimonials() {
                 loading="lazy"
               />
               <div className="mt-4 space-y-4 text-center sm:mt-0 sm:text-left">
-                <p className="text-gray-600">
+                <p className="text-black ">
                   {" "}
                   <span className="font-serif"></span> Lorem ipsum dolor sit
                   amet consectetur adipisicing elit. Quaerat repellat
@@ -83,7 +83,7 @@ export default function Testimonials() {
                 loading="lazy"
               />
               <div className="mt-4 space-y-4 text-center sm:mt-0 sm:text-left">
-                <p className="text-gray-600">
+                <p className="text-black ">
                   {" "}
                   <span className="font-serif"></span> Lorem ipsum dolor sit
                   amet consectetur adipisicing elit. Quaerat repellat
