@@ -1,17 +1,22 @@
+import Image from "next/image"
+import { anton } from "../fonts"
+
 export default function Testimonials() {
   return (
     <>
       <div className="bg-white py-16">
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-          <h2 className="mb-12 text-center text-2xl font-bold text-gray-900 md:text-4xl">
-            What's our customers say
+          <h2
+            className={`${anton.className} mb-12 text-center text-2xl font-bold text-gray-900 md:text-4xl`}
+          >
+            WHAT THEY SAY
           </h2>
           <div className="grid gap-8 md:grid-rows-2 lg:grid-cols-2">
             <div className="row-span-2 rounded-xl border border-gray-100 bg-gray-50 p-6 text-center sm:p-8">
               <div className="flex h-full flex-col justify-center space-y-4">
-                <img
+                <Image
                   className="mx-auto h-20 w-20 rounded-full"
-                  src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/second_user.webp"
+                  src="/vercel.svg"
                   alt="user avatar"
                   height="220"
                   width="220"
@@ -38,9 +43,9 @@ export default function Testimonials() {
             </div>
 
             <div className="rounded-xl border border-gray-100 bg-gray-50 p-6 sm:flex sm:space-x-8 sm:p-8">
-              <img
+              <Image
                 className="mx-auto h-20 w-20 rounded-full"
-                src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/first_user.webp"
+                src="/vercel.svg"
                 alt="user avatar"
                 height="220"
                 width="220"
@@ -67,9 +72,9 @@ export default function Testimonials() {
               </div>
             </div>
             <div className="rounded-xl border border-gray-100 bg-gray-50 p-6 sm:flex sm:space-x-8 sm:p-8">
-              <img
+              <Image
                 className="mx-auto h-20 w-20 rounded-full"
-                src="https://tailus.io/sources/blocks/grid-cards/preview/images/avatars/third_user.webp"
+                src="/vercel.svg"
                 alt="user avatar"
                 height="220"
                 width="220"
