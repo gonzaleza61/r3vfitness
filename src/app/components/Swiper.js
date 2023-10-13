@@ -46,8 +46,15 @@ export default function ImageSwiper() {
               },
             }}
           >
-            <div className="flex">
-              <SwiperSlide>
+            <SwiperSlide>
+              <div className="flex">
+                <div
+                  className={`${anton.className} absolute bottom-0 w-full bg-white p-4 opacity-50`}
+                >
+                  <h1 className="text-center text-lg text-black ">
+                    STRENGTH TRAINING
+                  </h1>
+                </div>
                 <Image
                   src="/strengthtraining.jpg"
                   alt="strength training"
@@ -56,63 +63,63 @@ export default function ImageSwiper() {
                   height={600}
                   loading="eager"
                 />
-              </SwiperSlide>
-              <SwiperSlide className="bg-slate-700">
-                <Image
-                  src="/training2.jpg"
-                  alt="strength training"
-                  className="h-full w-full object-cover"
-                  width={600}
-                  height={600}
-                  loading="eager"
-                />
-                Slide 4
-              </SwiperSlide>
-              <SwiperSlide className="bg-slate-700">
-                <Image
-                  src="/mealplan.jpg"
-                  alt="meal plan"
-                  className="h-full w-full object-cover"
-                  width={600}
-                  height={600}
-                  loading="eager"
-                />
-              </SwiperSlide>
-              <SwiperSlide className="bg-slate-700">
-                <Image
-                  src="/training1.jpg"
-                  alt="strength training"
-                  className="h-full w-full object-cover"
-                  width={600}
-                  height={600}
-                  loading="eager"
-                />
-                Slide 3
-              </SwiperSlide>
-              <SwiperSlide className="bg-slate-700">
-                <Image
-                  src="/training3.jpg"
-                  alt="strength training"
-                  className="h-full w-full object-cover"
-                  width={600}
-                  height={600}
-                  loading="eager"
-                />
-                Slide 5
-              </SwiperSlide>
-              <SwiperSlide className="bg-slate-700">
-                {" "}
-                <Image
-                  src="/training4.jpg"
-                  alt="strength training"
-                  className="h-full w-full object-cover"
-                  width={600}
-                  height={600}
-                  loading="eager"
-                />
-                Slide 6
-              </SwiperSlide>
-            </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className="bg-slate-700">
+              <Image
+                src="/training2.jpg"
+                alt="strength training"
+                className="h-full w-full object-cover"
+                width={600}
+                height={600}
+                loading="eager"
+              />
+              Slide 4
+            </SwiperSlide>
+            <SwiperSlide className="bg-slate-700">
+              <Image
+                src="/mealplan.jpg"
+                alt="meal plan"
+                className="h-full w-full object-cover"
+                width={600}
+                height={600}
+                loading="eager"
+              />
+            </SwiperSlide>
+            <SwiperSlide className="bg-slate-700">
+              <Image
+                src="/training1.jpg"
+                alt="strength training"
+                className="h-full w-full object-cover"
+                width={600}
+                height={600}
+                loading="eager"
+              />
+              Slide 3
+            </SwiperSlide>
+            <SwiperSlide className="bg-slate-700">
+              <Image
+                src="/training3.jpg"
+                alt="strength training"
+                className="h-full w-full object-cover"
+                width={600}
+                height={600}
+                loading="eager"
+              />
+              Slide 5
+            </SwiperSlide>
+            <SwiperSlide className="bg-slate-700">
+              <Image
+                src="/training4.jpg"
+                alt="strength training"
+                className="h-full w-full object-cover"
+                width={600}
+                height={600}
+                loading="eager"
+              />
+              Slide 6
+            </SwiperSlide>
           </Swiper>
         </div>
       </section>
