@@ -49,10 +49,10 @@ export default function ImageSwiper() {
             <SwiperSlide>
               <div className="flex">
                 <div
-                  className={`${anton.className} absolute bottom-0 w-full bg-white p-4 opacity-50`}
+                  className={`${anton.className} absolute bottom-0 w-full bg-black bg-opacity-50 p-6`}
                 >
-                  <h1 className="text-center text-lg text-black ">
-                    STRENGTH TRAINING
+                  <h1 className="text-center text-lg text-white">
+                    CUSTOMIZED WORKOUTS
                   </h1>
                 </div>
                 <Image
@@ -66,7 +66,14 @@ export default function ImageSwiper() {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide className="bg-slate-700">
+            <SwiperSlide>
+              <div
+                className={`${anton.className} absolute bottom-0 w-full bg-black bg-opacity-50 p-6`}
+              >
+                <h1 className="text-center text-lg text-white">
+                  ONE-ON-ONE TRAINING
+                </h1>
+              </div>
               <Image
                 src="/training2.jpg"
                 alt="strength training"
@@ -77,7 +84,14 @@ export default function ImageSwiper() {
               />
               Slide 4
             </SwiperSlide>
-            <SwiperSlide className="bg-slate-700">
+            <SwiperSlide>
+              <div
+                className={`${anton.className} absolute bottom-0 w-full bg-black bg-opacity-50 p-6`}
+              >
+                <h1 className="text-center text-lg text-white">
+                  NUTRITIONAL GUIDANCE
+                </h1>
+              </div>
               <Image
                 src="/mealplan.jpg"
                 alt="meal plan"
@@ -87,7 +101,14 @@ export default function ImageSwiper() {
                 loading="eager"
               />
             </SwiperSlide>
-            <SwiperSlide className="bg-slate-700">
+            <SwiperSlide>
+              <div
+                className={`${anton.className} absolute bottom-0 w-full bg-black bg-opacity-50 p-6`}
+              >
+                <h1 className="text-center text-lg text-white">
+                  FUNCTIONAL FITNESS TRAINING
+                </h1>
+              </div>
               <Image
                 src="/training1.jpg"
                 alt="strength training"
@@ -98,7 +119,14 @@ export default function ImageSwiper() {
               />
               Slide 3
             </SwiperSlide>
-            <SwiperSlide className="bg-slate-700">
+            <SwiperSlide>
+              <div
+                className={`${anton.className} absolute bottom-0 w-full bg-black bg-opacity-50 p-6`}
+              >
+                <h1 className="text-center text-lg text-white">
+                  STRENGTH TRAINING
+                </h1>
+              </div>
               <Image
                 src="/training3.jpg"
                 alt="strength training"
@@ -109,7 +137,12 @@ export default function ImageSwiper() {
               />
               Slide 5
             </SwiperSlide>
-            <SwiperSlide className="bg-slate-700">
+            <SwiperSlide>
+              <div
+                className={`${anton.className} absolute bottom-0 w-full bg-black bg-opacity-50 p-6`}
+              >
+                <h1 className="text-center text-lg text-white">BOOT CAMPS</h1>
+              </div>
               <Image
                 src="/training4.jpg"
                 alt="strength training"
