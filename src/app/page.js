@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <div className=" h-px bg-zinc-800"></div>
       <HeroSection />
-      <ImageSwiper />
       <AboutSection />
+      <ImageSwiper />
       <Testimonials />
     </>
   )
