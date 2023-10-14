@@ -20,7 +20,7 @@ export default function ImageSwiper() {
         <h1
           className={`${anton.className} py-6 text-3xl underline decoration-yellow sm:text-4xl xl:text-5xl/none`}
         >
-          OUR PROGRAMS
+          MY PROGRAMS
         </h1>
         <div className="justify-center">
           <Swiper

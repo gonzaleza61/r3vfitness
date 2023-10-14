@@ -30,8 +30,8 @@ export default function Component() {
                 START YOUR REVOLUTION IN FITNESS
               </h1>
               <p className="t mx-auto max-w-[600px] text-yellow  md:text-xl">
-                Become a Part of Our Dynamic Fitness Community and Begin Your
-                Health Journey.
+                Become a Part of My Dynamic Fitness Team and Begin Your Health
+                Journey.
               </p>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
