@@ -16,9 +16,9 @@ import Image from "next/image"
 export default function ImageSwiper() {
   return (
     <>
-      <section className="px-12 py-12">
+      <section className="block justify-center py-28 md:px-4 lg:px-12">
         <h1
-          className={`${anton.className} py-6 text-3xl underline decoration-yellow sm:text-4xl xl:text-5xl/none`}
+          className={`${anton.className} pb-6 text-3xl underline decoration-yellow sm:text-4xl xl:text-5xl/none`}
         >
           MY PROGRAMS
         </h1>
