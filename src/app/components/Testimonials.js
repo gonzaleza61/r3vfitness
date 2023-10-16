@@ -14,7 +14,7 @@ export default function Testimonials() {
           <div
             className={`${anton.className} grid gap-8 md:grid-rows-2 lg:grid-cols-2`}
           >
-            <div className="row-span-2 rounded-xl border border-gray-100 bg-yellow p-6 text-center sm:p-8">
+            <div className="row-span-2 rounded-xl border border-gray-100 bg-black p-6 text-center sm:p-8">
               <div className="flex h-full flex-col justify-center space-y-4">
                 <Image
                   className="mx-auto h-20 w-20 rounded-full"
@@ -24,7 +24,7 @@ export default function Testimonials() {
                   width="220"
                   loading="lazy"
                 />
-                <p className="text-black md:text-xl">
+                <p className="text-white md:text-xl">
                   {" "}
                   <span className="font-serif"></span> {'"'}Isaias is the real
                   deal. His dedication and expertise have been life-changing.
@@ -33,7 +33,7 @@ export default function Testimonials() {
                   <span className="font-serif"></span>
                 </p>
                 <div>
-                  <h6 className="text-lg font-semibold leading-none text-black">
+                  <h6 className="text-lg font-semibold leading-none text-yellow">
                     Aaron G.
                   </h6>
                 </div>
