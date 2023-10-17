@@ -1,6 +1,8 @@
 "use client"
 import React, { useRef, useState } from "react"
 import { anton } from "../fonts"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
 
@@ -12,8 +14,11 @@ import "swiper/css/pagination"
 import { Pagination } from "swiper/modules"
 
 import Image from "next/image"
+import { library } from "@fortawesome/fontawesome-svg-core"
 
 export default function ImageSwiper() {
+  library.add(faChevronRight)
+
   return (
     <>
       <section className="block justify-center px-4 py-28 md:px-8 lg:px-12">
@@ -154,6 +159,14 @@ export default function ImageSwiper() {
               Slide 6
             </SwiperSlide>
           </Swiper>
+        </div>
+        <div className="flex items-center justify-end pt-2">
+          <h1 className={`${anton.className} pr-1 text-white`}>SWIPE</h1>
+          <FontAwesomeIcon
+            icon="chevron-right"
+            beat
+            style={{ color: "#d7fb00" }}
+          />
         </div>
       </section>
     </>
