@@ -14,7 +14,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-    --swiper-pagination-color: #d7fb00;
+    --swiper-pagination-color: rgb(215, 251, 0);
     --swiper-pagination-bullet-inactive-color: #fff;
   }
 }

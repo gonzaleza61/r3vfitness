@@ -3,6 +3,7 @@ import { anton, inter } from "../fonts"
 import "font-awesome/css/font-awesome.min.css"
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function NavBar() {
   const [faIcon, setFaIcon] = useState(true)
@@ -80,7 +81,7 @@ export default function NavBar() {
             </h1>
           </li>
           <li className="hover:transition-color text-white hover:text-yellow  hover:duration-500">
-            <a href="#">ABOUT</a>
+            <Link href="#about">ABOUT</Link>
           </li>
           <li className="hover:transition-color text-white hover:text-yellow  hover:duration-500">
             <a href="#">PROGRAMS</a>
