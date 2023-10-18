@@ -15,8 +15,8 @@ export default function Footer() {
                 width="40"
               />
               <p class="mt-4 max-w-xs text-sm text-gray-600">
-                Start your revolution in fitness. Start your revolution in
-                fitness.Start your revolution in fitness.
+                Start your revolution in fitness with Isaias Marzuca. Your
+                journey to a healthier, happier you begins here.
               </p>
               <div class="mt-8 flex space-x-6 text-yellow ">
                 <a
