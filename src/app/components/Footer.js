@@ -69,15 +69,15 @@ export default function Footer() {
                     {" "}
                     About{" "}
                   </a>
-                  <a class="hover:opacity-75" href="programs">
+                  <a class="hover:opacity-75" href="#programs">
                     {" "}
                     Programs{" "}
                   </a>
-                  <a class="hover:opacity-75" href="testimonials">
+                  <a class="hover:opacity-75" href="#testimonials">
                     {" "}
                     Testimonials{" "}
                   </a>
-                  <a class="hover:opacity-75" href="contact">
+                  <a class="hover:opacity-75" href="#contact">
                     {" "}
                     Contact{" "}
                   </a>
