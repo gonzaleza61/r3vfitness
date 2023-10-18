@@ -4,7 +4,7 @@ import { anton } from "../fonts"
 export default function Testimonials() {
   return (
     <>
-      <div className="bg-white py-16">
+      <div id="testimonials" className="bg-white py-16">
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <h2
             className={`${anton.className} mb-12 text-center text-2xl font-bold text-gray-900 md:text-4xl`}

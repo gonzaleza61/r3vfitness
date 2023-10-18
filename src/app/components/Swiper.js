@@ -21,7 +21,10 @@ export default function ImageSwiper() {
 
   return (
     <>
-      <section className="block justify-center px-4 py-28 md:px-8 lg:px-12">
+      <section
+        id="programs"
+        className="block justify-center px-4 py-28 md:px-8 lg:px-12"
+      >
         <h1
           className={`${anton.className} pb-6 text-3xl underline decoration-yellow sm:text-4xl xl:text-5xl/none`}
         >
@@ -161,8 +164,17 @@ export default function ImageSwiper() {
           </Swiper>
         </div>
         <div className="flex items-center justify-end pt-2">
-          <h1 className={`${anton.className} pr-1 text-white`}>SWIPE</h1>
+          <h1 className={`${anton.className} pr-1 text-2xl text-white`}>
+            SWIPE
+          </h1>
           <FontAwesomeIcon
+            className="text-2xl"
+            icon="chevron-right"
+            beat
+            style={{ color: "#d7fb00" }}
+          />
+          <FontAwesomeIcon
+            className="text-2xl"
             icon="chevron-right"
             beat
             style={{ color: "#d7fb00" }}

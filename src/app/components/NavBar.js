@@ -42,21 +42,21 @@ export default function NavBar() {
               faIcon ? "hidden" : "flex"
             }  flex-col justify-between text-center`}
           >
-            <a className="py-2" href="#">
+            <Link className="py-2" href="#">
               HOME
-            </a>
-            <a className="py-2" href="#">
+            </Link>
+            <Link className="py-2" href="#about">
               ABOUT
-            </a>
-            <a className="py-2" href="#">
+            </Link>
+            <Link className="py-2" href="#programs">
               PROGRAMS
-            </a>
-            <a className="py-2" href="#">
+            </Link>
+            <Link className="py-2" href="#testimonials">
               TESTIMONIALS
-            </a>
-            <a className="py-2" href="#">
+            </Link>
+            <Link className="py-2" href="#contact">
               CONTACT
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -84,18 +84,18 @@ export default function NavBar() {
             <Link href="#about">ABOUT</Link>
           </li>
           <li className="hover:transition-color text-white hover:text-yellow  hover:duration-500">
-            <a href="#">PROGRAMS</a>
+            <Link href="#programs">PROGRAMS</Link>
           </li>
           <li className="hover:transition-color text-white hover:text-yellow  hover:duration-500">
-            <a href="#">TESTIMONIALS</a>
+            <Link href="#testimonials">TESTIMONIALS</Link>
           </li>
           <li
             className="border-yellow-50 hover:transition-color rounded-full border px-4 py-1 text-lg 
           text-white hover:border-black  hover:bg-yellow hover:text-black hover:duration-500"
           >
-            <a className={anton.className} href="#">
+            <Link className={anton.className} href="#contact">
               CONTACT
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

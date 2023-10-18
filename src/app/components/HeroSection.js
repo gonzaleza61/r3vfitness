@@ -46,7 +46,7 @@ export default function Component() {
                 </button>
               </form>
               <p className="text-xs text-zinc-200 dark:text-zinc-100">
-                Get ready to redefine your email experience.
+                Enter your email address.{" "}
                 <Link
                   className="text-white underline underline-offset-2"
                   href="#"
