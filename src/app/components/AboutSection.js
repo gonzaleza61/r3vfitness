@@ -18,19 +18,22 @@ export default function AboutSection() {
             </div>
             <div className="md:7/12 lg:w-6/12">
               <h2 className="text-2xl font-bold text-gray-900 md:text-4xl">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                About Isaias
               </h2>
               <p className="mt-6 text-gray-600">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                omnis voluptatem accusantium nemo perspiciatis delectus atque
-                autem! Voluptatum tenetur beatae unde aperiam, repellat expedita
-                consequatur! Officiis id consequatur atque doloremque!
+                Isaias{"'"} role is to motivate, facilitate and make training a
+                fun and rewarding experience for his clients. He has a passion
+                of helping others achieve their personal health and fitness
+                goals by hosting group training through his 4-Week Challenges
+                and Online Programs.
               </p>
               <p className="mt-4 text-gray-600">
                 {" "}
-                Nobis minus voluptatibus pariatur dignissimos libero quaerat
-                iure expedita at? Asperiores nemo possimus nesciunt dicta veniam
-                aspernatur quam mollitia.
+                ​As a fitness coach, Isaias wants to share his enthusiasm,
+                encourage a healthy lifestyle, and help many individuals realize
+                what their body is capable of. Most importantly, show them that
+                with determination, consistency, and support, the goal WILL be
+                achieved!
               </p>
             </div>
           </div>
