@@ -26,10 +26,14 @@ export default function ImageSwiper() {
         className="block justify-center px-4 py-28 md:px-8 lg:px-12"
       >
         <h1
-          className={`${anton.className} pb-6 text-3xl underline decoration-yellow sm:text-4xl xl:text-5xl/none`}
+          className={`${anton.className} pb-4 text-3xl underline decoration-yellow sm:text-4xl xl:text-5xl/none`}
         >
           MY PROGRAMS
         </h1>
+        <p className=" max-w-xs pb-8 text-sm text-gray-600">
+          Rev up your fitness journey with personalized programs and data-driven
+          training methods.
+        </p>
         <div className="justify-center">
           <Swiper
             slidesPerView={1}
