@@ -1,5 +1,6 @@
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 import { inter } from "./fonts"
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <NavBar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
