@@ -1,3 +1,5 @@
+"use client"
+
 import { anton } from "../fonts"
 
 import Link from "next/link"
@@ -5,6 +7,8 @@ import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import { library } from "@fortawesome/fontawesome-svg-core"
+
+import { motion } from "framer-motion"
 
 export default function Component() {
   library.add(faChevronRight)
@@ -15,11 +19,17 @@ export default function Component() {
         <div className="grid items-center gap-6">
           <div className="flex flex-col justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1
-                className={`${anton.className} bg-white  bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-5xl xl:text-6xl/none`}
+              <motion.div
+                initial={{ opacity: 0, scale: 1.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
               >
-                START YOUR REVOLUTION IN FITNESS
-              </h1>
+                <h1
+                  className={`${anton.className} bg-white  bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-5xl xl:text-6xl/none`}
+                >
+                  START YOUR REVOLUTION IN FITNESS
+                </h1>
+              </motion.div>
               <p className=" mx-auto max-w-[600px] pb-5 text-yellow  md:text-xl">
                 Become a Part of My Dynamic Fitness Team and Begin Your Health
                 Journey.

@@ -1,12 +1,21 @@
 "use client"
-import { anton, inter } from "../fonts"
+import { anton } from "../fonts"
 import "font-awesome/css/font-awesome.min.css"
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 export default function NavBar() {
   const [faIcon, setFaIcon] = useState(true)
+
+  const navLinks = [
+    { title: "Home", href: "/" },
+    { title: "About", href: "/" },
+    { title: "Programs", href: "/" },
+    { title: "Testimonials", href: "/" },
+    { title: "Contact", href: "/" },
+  ]
 
   const faIconToggle = () => {
     setFaIcon(!faIcon)
@@ -63,6 +72,7 @@ export default function NavBar() {
         {/**
          * Desktop Nav
          */}
+
         <ul className="m-0 hidden list-none flex-row flex-wrap items-center justify-center gap-8 p-0 md:flex">
           <li className="hover:transition-color mr-auto basis-auto text-left text-white  hover:text-yellow hover:duration-500">
             <h1>
