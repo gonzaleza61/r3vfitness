@@ -29,11 +29,11 @@ export default function Component() {
                 >
                   START YOUR REVOLUTION IN FITNESS
                 </h1>
+                <p className=" mx-auto max-w-[600px] pb-5 text-yellow  md:text-xl">
+                  Become a Part of My Dynamic Fitness Team and Begin Your Health
+                  Journey.
+                </p>
               </motion.div>
-              <p className=" mx-auto max-w-[600px] pb-5 text-yellow  md:text-xl">
-                Become a Part of My Dynamic Fitness Team and Begin Your Health
-                Journey.
-              </p>
             </div>
             <div>
               <Link
