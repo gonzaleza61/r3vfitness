@@ -25,7 +25,7 @@ export default function NavBar() {
     <>
       <nav
         className={`${
-          faIcon ? "bg-black " : "bg-gray-500 "
+          faIcon ? "bg-black " : "bg-black "
         }mx-auto my-0 max-w-screen-xl py-8 md:px-4`}
       >
         {/**
@@ -45,7 +45,7 @@ export default function NavBar() {
           ></button>
         </div>
 
-        <div className="w-full bg-gray-500 md:hidden">
+        <div className="w-full bg-black md:hidden">
           <div
             className={`${
               faIcon ? "hidden" : "flex"
@@ -54,18 +54,23 @@ export default function NavBar() {
             <Link className="py-2" href="#">
               HOME
             </Link>
+            <div className="w-full border border-yellow"></div>
             <Link className="py-2" href="#about">
               ABOUT
             </Link>
+            <div className="w-full border border-yellow"></div>
             <Link className="py-2" href="#programs">
               PROGRAMS
             </Link>
+            <div className="w-full border border-yellow"></div>
             <Link className="py-2" href="#testimonials">
               TESTIMONIALS
             </Link>
+            <div className="w-full border border-yellow"></div>
             <Link className="py-2" href="#contact">
               CONTACT
             </Link>
+            <div className="w-full border border-yellow"></div>
           </div>
         </div>
 
@@ -73,41 +78,47 @@ export default function NavBar() {
          * Desktop Nav
          */}
 
-        <ul className="m-0 hidden list-none flex-row flex-wrap items-center justify-center gap-8 p-0 md:flex">
-          <li className="hover:transition-color mr-auto basis-auto text-left text-white  hover:text-yellow hover:duration-500">
-            <h1>
-              <a href="/">
-                <div className="relative">
-                  <Image
-                    src="/r3vlogo.svg"
-                    alt="r3vfitlogo"
-                    width={50}
-                    height={50}
-                    className="transition-all duration-300 ease-in-out"
-                  />
-                  <div className="hover: absolute inset-0 bg-yellow opacity-0 mix-blend-multiply transition-opacity duration-300 ease-in-out hover:opacity-100"></div>
-                </div>
-              </a>
-            </h1>
-          </li>
-          <li className="hover:transition-color text-white hover:text-yellow  hover:duration-500">
-            <Link href="#about">ABOUT</Link>
-          </li>
-          <li className="hover:transition-color text-white hover:text-yellow  hover:duration-500">
-            <Link href="#programs">PROGRAMS</Link>
-          </li>
-          <li className="hover:transition-color text-white hover:text-yellow  hover:duration-500">
-            <Link href="#testimonials">TESTIMONIALS</Link>
-          </li>
-          <li
-            className="border-yellow-50 hover:transition-color rounded-full border px-4 py-1 text-lg 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <ul className="m-0 hidden list-none flex-row flex-wrap items-center justify-center gap-8 p-0 md:flex">
+            <li className="hover:transition-color mr-auto basis-auto text-left text-white  hover:text-yellow hover:duration-500">
+              <h1>
+                <a href="/">
+                  <div className="relative">
+                    <Image
+                      src="/r3vlogo.svg"
+                      alt="r3vfitlogo"
+                      width={50}
+                      height={50}
+                      className="transition-all duration-300 ease-in-out"
+                    />
+                    <div className="hover: absolute inset-0 bg-yellow opacity-0 mix-blend-multiply transition-opacity duration-300 ease-in-out hover:opacity-100"></div>
+                  </div>
+                </a>
+              </h1>
+            </li>
+            <li className="hover:transition-color text-white hover:text-yellow  hover:duration-500">
+              <Link href="#about">ABOUT</Link>
+            </li>
+            <li className="hover:transition-color text-white hover:text-yellow  hover:duration-500">
+              <Link href="#programs">PROGRAMS</Link>
+            </li>
+            <li className="hover:transition-color text-white hover:text-yellow  hover:duration-500">
+              <Link href="#testimonials">TESTIMONIALS</Link>
+            </li>
+            <li
+              className="border-yellow-50 hover:transition-color rounded-full border px-4 py-1 text-lg 
           text-white hover:border-black  hover:bg-yellow hover:text-black hover:duration-500"
-          >
-            <Link className={anton.className} href="#contact">
-              CONTACT
-            </Link>
-          </li>
-        </ul>
+            >
+              <Link className={anton.className} href="#contact">
+                CONTACT
+              </Link>
+            </li>
+          </ul>
+        </motion.div>
       </nav>
     </>
   )
