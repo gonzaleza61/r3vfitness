@@ -20,7 +20,7 @@ export default function Component() {
           <div className="flex flex-col justify-center space-y-4 text-center">
             <div className="space-y-2">
               <motion.div
-                initial={{ opacity: 0, scale: 1.5 }}
+                initial={{ opacity: 0, scale: 2 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
               >
@@ -40,6 +40,7 @@ export default function Component() {
                 initial={{ x: -500, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
+                whileHover={{ scale: 1.1 }}
               >
                 <Link
                   className={`${anton.className} hover:transition-color mr-2  rounded-xl border border-white bg-yellow px-5 py-2 text-center text-lg
@@ -57,6 +58,7 @@ export default function Component() {
                 initial={{ x: 500, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
+                whileHover={{ scale: 1.1 }}
               >
                 <Link
                   className={`${anton.className} border-yellow-50 hover:transition-color rounded-xl   border px-5 py-2 text-lg 
