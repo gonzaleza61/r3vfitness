@@ -35,25 +35,37 @@ export default function Component() {
                 </p>
               </motion.div>
             </div>
-            <div>
-              <Link
-                className={`${anton.className} hover:transition-color mr-2  rounded-xl border border-white bg-yellow px-5 py-2 text-center text-lg
+            <div className="flex justify-center">
+              <motion.div
+                initial={{ x: -500, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Link
+                  className={`${anton.className} hover:transition-color mr-2  rounded-xl border border-white bg-yellow px-5 py-2 text-center text-lg
           text-black hover:border-white  hover:bg-black hover:text-white hover:duration-500`}
-                href="#contact"
+                  href="#contact"
+                >
+                  JOIN NOW
+                  {/* <FontAwesomeIcon
+                    className="items-center text-xl"
+                    icon="chevron-right"
+                  /> */}
+                </Link>
+              </motion.div>
+              <motion.div
+                initial={{ x: 500, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
               >
-                JOIN NOW
-                <FontAwesomeIcon
-                  className="items-center text-xl"
-                  icon="chevron-right"
-                />
-              </Link>
-              <Link
-                className={`${anton.className} border-yellow-50 hover:transition-color rounded-xl   border px-5 py-2 text-lg 
+                <Link
+                  className={`${anton.className} border-yellow-50 hover:transition-color rounded-xl   border px-5 py-2 text-lg 
           text-white hover:border-black  hover:bg-yellow hover:text-black hover:duration-500`}
-                href="#contact"
-              >
-                LOGIN
-              </Link>
+                  href="#contact"
+                >
+                  LOGIN
+                </Link>
+              </motion.div>
             </div>
           </div>
         </div>
