@@ -3,31 +3,31 @@ import Image from "next/image"
 export default function Footer() {
   return (
     <>
-      <footer class=" bg-black">
-        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <footer className=" bg-black">
+        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <Image
                 src="/r3vlogo.svg"
-                class="mr-5  sm:h-9"
+                className="mr-5  sm:h-9"
                 alt="logo"
                 height="80"
                 width="40"
               />
-              <p class="mt-4 max-w-xs text-sm text-gray-600">
+              <p className="mt-4 max-w-xs text-sm text-gray-600">
                 Start your revolution in fitness with Isaias Marzuca. Your
                 journey to a healthier, happier you begins here.
               </p>
-              <div class="mt-8 flex space-x-6 text-yellow ">
+              <div className="mt-8 flex space-x-6 text-yellow ">
                 <a
-                  class="hover:opacity-75"
+                  className="hover:opacity-75"
                   href="https://www.facebook.com/cheeto100"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span class="sr-only"> Facebook </span>
+                  <span className="sr-only"> Facebook </span>
                   <svg
-                    class="h-6 w-6"
+                    className="h-6 w-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -40,14 +40,14 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  class="hover:opacity-75"
+                  className="hover:opacity-75"
                   href="https://www.instagram.com/r3volutionaryfit/?hl=en"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span class="sr-only"> Instagram </span>
+                  <span className="sr-only"> Instagram </span>
                   <svg
-                    class="h-6 w-6"
+                    className="h-6 w-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -61,23 +61,23 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
               <div>
-                <p class="font-medium">r3vfitness</p>
-                <nav class="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
-                  <a class="hover:opacity-75" href="#about">
+                <p className="font-medium">r3vfitness</p>
+                <nav className="mt-4 flex flex-col space-y-2 text-sm text-gray-500">
+                  <a className="hover:opacity-75" href="#about">
                     {" "}
                     About{" "}
                   </a>
-                  <a class="hover:opacity-75" href="#programs">
+                  <a className="hover:opacity-75" href="#programs">
                     {" "}
                     Programs{" "}
                   </a>
-                  <a class="hover:opacity-75" href="#testimonials">
+                  <a className="hover:opacity-75" href="#testimonials">
                     {" "}
                     Testimonials{" "}
                   </a>
-                  <a class="hover:opacity-75" href="#contact">
+                  <a className="hover:opacity-75" href="#contact">
                     {" "}
                     Contact{" "}
                   </a>
@@ -85,7 +85,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <p class="mt-8 text-xs text-gray-800">© 2023 rev0lutionaryfit</p>
+          <p className="mt-8 text-xs text-gray-800">© 2023 rev0lutionaryfit</p>
         </div>
       </footer>
     </>
