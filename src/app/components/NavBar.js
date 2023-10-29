@@ -81,7 +81,7 @@ export default function NavBar() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.25 }}
         >
           <ul className="m-0 hidden list-none flex-row flex-wrap items-center justify-center gap-8 p-0 md:flex">
             <li className="hover:transition-color mr-auto basis-auto text-left text-white  hover:text-yellow hover:duration-500">

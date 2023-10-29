@@ -20,9 +20,9 @@ export default function Component() {
           <div className="flex flex-col justify-center space-y-4 text-center">
             <div className="space-y-2">
               <motion.div
-                initial={{ opacity: 0, scale: 2 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.25 }}
               >
                 <h1
                   className={`${anton.className} bg-white  bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-5xl xl:text-6xl/none`}
@@ -37,9 +37,9 @@ export default function Component() {
             </div>
             <div className="flex justify-center">
               <motion.div
-                initial={{ x: -500, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.25 }}
                 whileHover={{ scale: 1.1 }}
               >
                 <Link
@@ -55,9 +55,9 @@ export default function Component() {
                 </Link>
               </motion.div>
               <motion.div
-                initial={{ x: 500, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.25 }}
                 whileHover={{ scale: 1.1 }}
               >
                 <Link

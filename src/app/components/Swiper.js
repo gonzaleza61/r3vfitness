@@ -16,6 +16,9 @@ import { Pagination } from "swiper/modules"
 import Image from "next/image"
 import { library } from "@fortawesome/fontawesome-svg-core"
 
+//animation
+import { motion } from "framer-motion"
+
 export default function ImageSwiper() {
   library.add(faChevronRight)
 
@@ -25,11 +28,17 @@ export default function ImageSwiper() {
         id="programs"
         className="block justify-center px-4 py-28 md:px-8 lg:px-12"
       >
-        <h1
-          className={`${anton.className} pb-4 text-3xl underline decoration-yellow sm:text-4xl xl:text-5xl/none`}
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.25 }}
         >
-          MY PROGRAMS
-        </h1>
+          <h1
+            className={`${anton.className} pb-4 text-3xl underline decoration-yellow sm:text-4xl xl:text-5xl/none`}
+          >
+            MY PROGRAMS
+          </h1>
+        </motion.div>
         <p className=" max-w-xs pb-8 text-sm text-gray-600">
           Rev up your fitness journey with personalized programs and data-driven
           training methods.
