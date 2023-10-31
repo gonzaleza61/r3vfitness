@@ -49,6 +49,7 @@ export default function AboutSection() {
                   About Isaias
                 </h2>
               </motion.div>
+              {/**joe biden */}
 
               <p className="mt-6 text-gray-600">
                 Isaias{"'"} role is to motivate, facilitate and make training a
