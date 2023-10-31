@@ -17,7 +17,7 @@ import Image from "next/image"
 import { library } from "@fortawesome/fontawesome-svg-core"
 
 //animation
-import { motion, useInView, useAnimation, useIsPresent } from "framer-motion"
+import { motion, useInView, useAnimation } from "framer-motion"
 
 export default function ImageSwiper() {
   library.add(faChevronRight)
@@ -42,8 +42,8 @@ export default function ImageSwiper() {
       >
         <motion.div
           variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, x: -75 },
+            visible: { opacity: 1, x: 0 },
           }}
           initial="hidden"
           animate={mainControls}

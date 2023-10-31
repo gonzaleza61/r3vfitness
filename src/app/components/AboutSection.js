@@ -38,8 +38,8 @@ export default function AboutSection() {
             <div className="md:7/12 lg:w-6/12">
               <motion.div
                 variants={{
-                  hidden: { opacity: 0, y: 75 },
-                  visible: { opacity: 1, y: 0 },
+                  hidden: { opacity: 0, x: 75 },
+                  visible: { opacity: 1, x: 0 },
                 }}
                 initial="hidden"
                 animate={mainControls}
