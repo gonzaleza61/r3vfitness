@@ -43,13 +43,12 @@ export default function AboutSection() {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 0.5, delay: 0.25 }}
+                transition={{ duration: 1, delay: 0.25 }}
               >
                 <h2 className="text-2xl font-bold text-gray-900 md:text-4xl">
                   About Isaias
                 </h2>
               </motion.div>
-              {/**joe biden */}
 
               <p className="mt-6 text-gray-600">
                 Isaias{"'"} role is to motivate, facilitate and make training a

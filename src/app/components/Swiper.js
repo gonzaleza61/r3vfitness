@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef, useState } from "react"
+import React, { useRef, useState, useEffect } from "react"
 import { anton } from "../fonts"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
@@ -17,21 +17,37 @@ import Image from "next/image"
 import { library } from "@fortawesome/fontawesome-svg-core"
 
 //animation
-import { motion } from "framer-motion"
+import { motion, useInView, useAnimation, useIsPresent } from "framer-motion"
 
 export default function ImageSwiper() {
   library.add(faChevronRight)
 
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
+  const mainControls = useAnimation()
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible")
+    }
+  }, [isInView])
+
   return (
     <>
       <section
+        ref={ref}
         id="programs"
         className="block justify-center px-4 py-28 md:px-8 lg:px-12"
       >
         <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.25 }}
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 1 }}
         >
           <h1
             className={`${anton.className} pb-4 text-3xl underline decoration-yellow sm:text-4xl xl:text-5xl/none`}
