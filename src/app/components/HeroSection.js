@@ -45,13 +45,13 @@ export default function Component() {
                 <Link
                   className={`${anton.className} hover:transition-color mr-2  rounded-xl border border-white bg-yellow px-5 py-2 text-center text-lg
           text-black hover:border-white  hover:bg-black hover:text-white hover:duration-500`}
-                  href="#contact"
+                  href="/dashboard"
                 >
                   JOIN NOW
-                  {/* <FontAwesomeIcon
+                  <FontAwesomeIcon
                     className="items-center text-xl"
                     icon="chevron-right"
-                  /> */}
+                  />
                 </Link>
               </motion.div>
               <motion.div
@@ -63,7 +63,7 @@ export default function Component() {
                 <Link
                   className={`${anton.className} border-yellow-50 hover:transition-color rounded-xl   border px-5 py-2 text-lg 
           text-white hover:border-black  hover:bg-yellow hover:text-black hover:duration-500`}
-                  href="#contact"
+                  href="/dashboard"
                 >
                   LOGIN
                 </Link>

@@ -5,6 +5,7 @@ import "./globals.css"
 import { inter } from "./fonts"
 import { config } from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
+import { ClerkProvider } from "@clerk/nextjs"
 
 config.autoAddCss = false
 
@@ -15,13 +16,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body>
-        <NavBar />
-        {children}
-        <Analytics />
-        <Footer />
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" className={inter.className}>
+        <body>
+          <NavBar />
+          {children}
+          <Analytics />
+          <Footer />
+        </body>
+      </html>
+    </ClerkProvider>
   )
 }
