@@ -6,6 +6,7 @@ import { inter } from "./fonts"
 import { config } from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { ClerkProvider } from "@clerk/nextjs"
+//test deploy
 
 config.autoAddCss = false
 
