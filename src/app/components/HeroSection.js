@@ -10,6 +10,8 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 
 import { motion } from "framer-motion"
 
+import { SignIn } from "@clerk/nextjs"
+
 export default function Component() {
   library.add(faChevronRight)
 

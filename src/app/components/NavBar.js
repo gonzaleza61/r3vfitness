@@ -6,6 +6,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 
+import { UserButton } from "@clerk/nextjs"
+
 export default function NavBar() {
   const [faIcon, setFaIcon] = useState(true)
 
@@ -71,6 +73,7 @@ export default function NavBar() {
               CONTACT
             </Link>
             <div className="w-full border border-yellow"></div>
+            <UserButton />
           </div>
         </div>
 
@@ -116,6 +119,9 @@ export default function NavBar() {
               <Link className={anton.className} href="#contact">
                 CONTACT
               </Link>
+            </li>
+            <li>
+              <UserButton afterSignOutUrl="/" />
             </li>
           </ul>
         </motion.div>

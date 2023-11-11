@@ -18,7 +18,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider appearance={{ baseTheme: [dark, neobrutalism] }}>
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+        variables: {
+          colorPrimary: "yellow",
+          colorBackground: "gray",
+          colorText: "white",
+        },
+      }}
+    >
       <html lang="en" className={inter.className}>
         <body>
           <NavBar />
