@@ -1,18 +1,19 @@
 "use client"
-import { useClerk } from "@clerk/nextjs"
+import { useUser } from "@clerk/nextjs"
 import { useEffect, useState } from "react"
 
 export default function Dashboard() {
-  const { user, session } = useClerk()
+  const { user } = useUser()
   const [userName, setUserName] = useState("")
 
   useEffect(() => {
-    if (session && user) {
+    if (user) {
       const userID = user.id
       console.log("User ID: ", userID)
       setUserName(user.fullName)
+      console.log(user)
     }
-  }, [session, user])
+  }, [user])
 
   return (
     <>
